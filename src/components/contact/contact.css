@@ -1,0 +1,155 @@
+.contact__container{
+    grid-template-columns: repeat(2 , max-content);
+    justify-content: center;
+    column-gap: 6rem;
+    padding-bottom: 3rem;
+
+    
+}
+.contact__info{
+    display: grid;
+    row-gap: 1rem;
+    grid-template-columns: 300px;
+}
+.contact__form{
+    width: 360px;
+}
+.contact__title{
+    align-items: center;
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-1-5);
+}
+/* .contact__info{
+    background-color: var(--container-color);
+    border: 1px solid rgba(0,0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 0.75rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center; */
+/* } */
+.contact__card{
+    background-color: var(--container-color);
+    border: 1px solid rgba(0,0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    transition: linear .3s;
+}
+.contact__card:hover{
+    background: #c0b6b6;
+}
+.contact__card-icon{
+    font-size: 2rem;
+    color: var(--title-color);
+    margin-top: var(--mb-0-5);
+}
+.contact__card-title,
+.contact__card-data{
+    font-size: var(--small-font-size);
+
+}
+.contact__card-title{
+    font-weight: var(--font-medium);
+}
+.contact__card-data{
+    display: block;
+    margin-bottom: var(--mb-0-75);
+
+}
+.contact__button{
+    color: var(--text-color);
+    font-size: 2rem;
+    align-items: center;
+}
+.contact__button-icon{
+    transition: .3s;
+}
+
+.contact__button:hover .contact__button-icon{
+    /* color: var(--text-color-dark);
+     */
+     transform: translate(0.25rem);
+}
+.contact__form-div{
+    position: relative;
+    margin-bottom: var(--mb-2);
+    height: 4rem;
+}
+.contact__form-input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--container-color);;
+    border: 2px solid rgb(0, 0, 0, 0.3);
+    border-radius: 10px;
+    color: var(--text-color);
+    outline: none;
+    padding: 0.7rem;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+
+}
+.contact__form-tag{
+    position: absolute;
+    top: -9px;
+    left: 10px;
+    background-color:var(--container-color);
+    font-size: var(--smaller-font-size);
+    /* padding: 0.25rem; */
+    background-color: var(--body-color);
+    z-index: 10;
+    border-radius: 10px;
+}
+.contact__form-area{
+    height: 11rem;
+}
+.button{
+    margin-top: 30%;
+}
+
+  /*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .contact__container{
+      column-gap: 3rem;
+    }
+  }
+  
+  /* For medium devices */
+  @media screen and (max-width: 768px) {
+  .contact__container{
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+  .contact__info{
+    justify-content: center;
+  }
+
+  .contact__form{
+    margin: 0 auto;
+  }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .contact__info{
+        grid-template-columns: 1fr;
+
+    }
+    .contact__form{
+        width: 100%;
+    }
+  }
+  
+  /* For small devices */
+  @media screen and (max-width: 350px) {
+  
+    .contact__info{
+        justify-content: center;
+    }
+  }

@@ -1,0 +1,53 @@
+.project button{
+    width: 10%;
+  }
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+ 
+
+  .card-group{
+    margin-left: 18%;
+    /* margin-bottom: var(--mb-2-5); */
+
+    
+
+  }
+ 
+  }
+  
+  /* For medium devices */
+  @media screen and (max-width: 768px) {
+  
+  
+  }
+  @media screen and (max-width: 2560px) {
+  
+    .card-group{
+        margin-right: -2%;
+        /* margin-bottom: var(--mb-2-5); */
+    
+        
+    
+      }
+  }
+  
+  @media screen and (max-width: 576px) {
+  }
+  
+  /* For small devices */
+  @media screen and (max-width: 350px) {
+ 
+    .card-group,
+  .big-card {
+    width: 65vw;
+  }
+  }
+  .button{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+  }
+
+
