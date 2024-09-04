@@ -1,4 +1,4 @@
-## My Portfolio Project
+# My Portfolio Project
 Welcome to my portfolio project! This project is built using pure React and showcases various animations and features to create a smooth and engaging user experience.
 
 # Features
